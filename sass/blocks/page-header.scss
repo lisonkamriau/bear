@@ -6,7 +6,7 @@
 	height:85px;
 }
 
-@media @tablet-widths{
+@media(min-width:768px){
 	.page-header{
 		position: relative;
 
@@ -23,7 +23,7 @@
 	}
 }
 
-@media @desktop-widths{
+@media(min-width:1200px){
 	.page-header{
 		padding-bottom: 648px;
 	}
