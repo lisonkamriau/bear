@@ -10,10 +10,10 @@
 	width:320px;
 	margin: 0 auto;
 
-	@media $tablet-widths{
+	@media (min-width:768px){
 	width:640px;
 	}
-	@media $desktop-widths{
+	@media (min-width:1200px){
 	width:960px;
 	}
 }
