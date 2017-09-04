@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Барбершоп "Бородинский"</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,24 +12,80 @@
 <body>
 
 	<header class="page-header">
-		<div class="page-header__logo"></div>
-121212121
-		<nav class="main-nav">
-			майн нав
+		<h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская класика</h1>
 
-			<div class="main-naw__wrapper">
-				враппер
-				
-				<ul class="main-nav__items">итемс</ul>
-				
-				<ul class="main-nav__user-items">юзер итемс</ul>
+		<div class="page-header__logo">
+			<img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп Бородинский">
+		</div>
+121212121
+		<nav class="main-nav main-nav--opened main-nav--nojs">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+
+			<div class="main-nav__wrapper">	
+
+				<ul class="main-nav__items">
+					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+					<li class="main-nav__item"><a href="#">Наши работы</a></li>
+					<li class="main-nav__item"><a href="#">Записаться</a></li>
+					<li class="main-nav__item"><a href="#">Контакты</a></li>
+					<li class="main-nav__item"><a href="#">Творец Вк</a></li>
+				</ul>	
+
+				<ul class="main-nav__user-items">
+					<li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
+				</ul>
 
 			</div>
-
 		</nav>
 	</header>
 
+	<section class="stats">
+		
+		<header class="stats__header">статс хедер
+		</header>
+		<table class="stats__items"></table>
+	</section>
 
+	<section class="advantages">
+		ад
+		<div class="advantages__wrapper">
+			ад враппер
+			<ul class="advantages__items">
+				<li class="advantages__item">ли</li>
+				<li class="advantages__item">ли</li>
+				<li class="advantages__item">ли</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="news">ньюс
+		<div class="news__wrapper">Ньюс враппер
+			<h2 class="news__title">ньюс тайтл</h2>
+
+			<ul class="news__items">
+				<li class="news__item">айтем </li>
+				<li class="news__item">айтем</li>
+				<li class="news__item"> айтем</li>
+			</ul>
+		</div>
+	</section>
+
+	<script >
+		var navMain = document.querySelector('.main-nav');
+		var navToggle = document.querySelector('.main-nav__toggle');
+
+		navMain.classList.remove('main-nav--nojs');
+
+		navToggle.addEventListener("click", function() {
+			if (navMain.classList.contains('main-nav--closed')) {
+				navMain.classList.remove('main-nav--closed');
+				navMain.classList.add('main-nav--opened');
+			} else {
+				navMain.classList.add('main-nav--closed');
+				navMain.classList.remove('main-nav--opened');
+			}
+		});
+	</script>
 
 
 
